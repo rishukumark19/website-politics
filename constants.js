@@ -75,35 +75,35 @@ window.content = {
           title: "Support for Injured Journalist",
           description:
             "Visited journalist Shri Satyendra Chauhan at Patliputra Hospital after he was attacked, wishing him a speedy recovery.",
-          image: "ragni_singh_facebook_images/img22.jpg",
+          image: "ragni_singh_facebook_images/img23.jpg",
         },
         {
           date: "November 12, 2025",
           title: "District Development Meetings",
           description:
             "Participated in key meetings at Dhanbad Collectorate for the Secondary Education Committee and the CM's Livestock Development Scheme.",
-          image: "ragni_singh_facebook_images/img23.jpg",
+          image: "ragni_singh_facebook_images/img3.jpg",
         },
         {
           date: "November 11, 2025",
           title: "Constituency Health Visit",
           description:
             "Visited the residence of Shri Shekhar Singh ji in Radhanagar to inquire about his father's health.",
-          image: "ragni_singh_facebook_images/img24.jpg",
+          image: "ragni_singh_facebook_images/img5.jpg",
         },
         {
           date: "November 11, 2025",
           title: "Chhathi Ceremony in Kolakushma",
           description:
             "Attended the Chhathi ceremony of Sri Nipen Chaudhary ji's grandson, extending congratulations to the family.",
-          image: "ragni_singh_facebook_images/img25.jpg",
+          image: "ragni_singh_facebook_images/img27.jpg",
         },
         {
           date: "November 10, 2025",
           title: "Standing with Victims of Crime",
           description:
             "Visited and assured support to oil trader Shri Shyam Bhimsaria ji after he was a victim of firing and robbery in Barwa Adda.",
-          image: "ragni_singh_facebook_images/img26.jpg",
+          image: "ragni_singh_facebook_images/img28.jpg",
         },
       ],
     },
