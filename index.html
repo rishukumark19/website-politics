@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ragini Sanjeev Singh | MLA, Jharia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: {
+                DEFAULT: "#FF9933", // Saffron
+                dark: "#e68a2e",
+              },
+              secondary: {
+                DEFAULT: "#000080", // Deep Blue
+                light: "#0000a3",
+              },
+              neutral: {
+                light: "#f5f5f5",
+                DEFAULT: "#e0e0e0",
+                dark: "#212121",
+              },
+            },
+            fontFamily: {
+              sans: ["Inter", "sans-serif"],
+              serif: ["Lora", "serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Lora:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* Simple fade-in for sections */
+      .fade-in-section {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+      }
+      .fade-in-section.is-visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      .hero-slide {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        opacity: 0;
+        transition: opacity 1.5s ease-in-out;
+      }
+      .timeline-item {
+        position: relative;
+        padding-left: 3rem;
+        padding-bottom: 2rem;
+        border-left: 2px solid #e0e0e0;
+      }
+      .timeline-item:last-child {
+        border-left: 2px solid transparent;
+        padding-bottom: 0;
+      }
+      .timeline-dot {
+        position: absolute;
+        left: -0.7rem;
+        top: 0;
+        height: 1.25rem;
+        width: 1.25rem;
+        border-radius: 9999px;
+      }
+    </style>
+  </head>
+  <body class="bg-neutral-light font-sans text-neutral-dark">
+    <!-- Header -->
+    <header class="bg-white/80 backdrop-blur-md sticky top-0 z-50 shadow-md">
+      <nav
+        class="container mx-auto px-6 py-3 flex justify-between items-center"
+      >
+        <a
+          href="#"
+          class="text-xl md:text-2xl font-bold text-secondary font-serif"
+          data-lang-key="hero.name"
+        >
+          Ragini Sanjeev Singh
+        </a>
+        <div
+          class="hidden md:flex items-center space-x-8"
+          id="nav-links-container"
+        >
+          <!-- Nav links will be populated by JS -->
+        </div>
+        <div
+          class="flex border-2 border-secondary-light rounded-full overflow-hidden"
+        >
+          <button
+            id="lang-en"
+            class="px-3 py-1 text-sm font-semibold transition-colors duration-300 bg-secondary text-white"
+          >
+            EN
+          </button>
+          <button
+            id="lang-hi"
+            class="px-3 py-1 text-sm font-semibold transition-colors duration-300 bg-white text-secondary hover:bg-neutral"
+          >
+            HI
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section
+        id="hero"
+        class="relative h-[70vh] min-h-[400px] text-white text-center overflow-hidden"
+      >
+        <!-- Slideshow Container -->
+        <div id="hero-slideshow" class="absolute inset-0 w-full h-full">
+          <!-- Slides will be injected here by JS -->
+        </div>
+        <!-- Overlay -->
+        <div
+          class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent"
+        ></div>
+        <!-- Content -->
+        <div
+          class="relative z-10 h-full flex items-center justify-center p-6 max-w-4xl mx-auto"
+        >
+          <div>
+            <h1
+              class="text-5xl md:text-7xl font-extrabold font-serif tracking-tight mb-2 drop-shadow-lg text-primary"
+              data-lang-key="hero.tagline"
+            >
+              झारिया की बेटी
+            </h1>
+            <p
+              class="text-2xl md:text-3xl max-w-2xl mx-auto font-semibold drop-shadow-md text-white"
+              data-lang-key="hero.subTagline"
+            >
+              Historic Victory for Jharia
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Victory Section -->
+      <section
+        id="victory"
+        class="py-16 md:py-24 bg-neutral-light fade-in-section"
+      >
+        <div class="container mx-auto px-6">
+          <h2
+            class="text-3xl md:text-4xl font-bold text-center mb-4 font-serif text-secondary"
+            data-lang-key="victory.title"
+          >
+            2024 Election Victory
+          </h2>
+          <p
+            class="text-xl text-center text-neutral-dark mb-12"
+            data-lang-key="victory.comebackTitle"
+          >
+            The Comeback: From 2019 to 2024
+          </p>
+          <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
+            <!-- 2024 Stats -->
+            <div
+              class="bg-white p-6 rounded-lg shadow-lg border-t-4 border-green-500"
+            >
+              <div class="flex justify-between items-center mb-4">
+                <h3 class="text-2xl font-bold font-serif text-secondary">
+                  2024
+                </h3>
+                <span
+                  class="bg-green-500 text-white text-xs font-bold px-3 py-1 rounded-full"
+                  data-lang-key="victory.stats2024.result"
+                  >Won</span
+                >
+              </div>
+              <p
+                class="text-4xl font-bold text-green-600"
+                data-lang-key="victory.stats2024.totalVotes"
+              >
+                87,892
+              </p>
+              <p
+                class="text-neutral-dark font-semibold mb-4"
+                data-lang-key="victory.stats2024.resultText"
+              >
+                Historic Victory!
+              </p>
+              <ul class="space-y-2 text-sm">
+                <li class="flex justify-between">
+                  <span>Vote %:</span>
+                  <strong data-lang-key="victory.stats2024.votePercentage"
+                    >51.47%</strong
+                  >
+                </li>
+                <li class="flex justify-between">
+                  <span>Margin:</span>
+                  <strong data-lang-key="victory.stats2024.margin"
+                    >14,511 Votes</strong
+                  >
+                </li>
+                <li class="flex justify-between">
+                  <span>Opponent:</span>
+                  <strong data-lang-key="victory.stats2024.opponent"
+                    >Purnima Niraj Singh (INC)</strong
+                  >
+                </li>
+              </ul>
+            </div>
+            <!-- 2019 Stats -->
+            <div
+              class="bg-white p-6 rounded-lg shadow-lg border-t-4 border-red-500"
+            >
+              <div class="flex justify-between items-center mb-4">
+                <h3 class="text-2xl font-bold font-serif text-secondary">
+                  2019
+                </h3>
+                <span
+                  class="bg-red-500 text-white text-xs font-bold px-3 py-1 rounded-full"
+                  data-lang-key="victory.stats2019.result"
+                  >Lost</span
+                >
+              </div>
+              <p
+                class="text-4xl font-bold text-red-600"
+                data-lang-key="victory.stats2019.totalVotes"
+              >
+                67,732
+              </p>
+              <p
+                class="text-neutral-dark font-semibold mb-4"
+                data-lang-key="victory.stats2019.resultText"
+              >
+                Lost By
+              </p>
+              <ul class="space-y-2 text-sm">
+                <li class="flex justify-between">
+                  <span>Vote %:</span>
+                  <strong data-lang-key="victory.stats2019.votePercentage"
+                    >42.73%</strong
+                  >
+                </li>
+                <li class="flex justify-between">
+                  <span>Margin:</span>
+                  <strong data-lang-key="victory.stats2019.margin"
+                    >12,054 Votes</strong
+                  >
+                </li>
+                <li class="flex justify-between">
+                  <span>Opponent:</span>
+                  <strong data-lang-key="victory.stats2019.opponent"
+                    >Purnima Niraj Singh (INC)</strong
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="py-16 md:py-24 bg-white fade-in-section">
+        <div class="container mx-auto px-6">
+          <div class="grid md:grid-cols-2 gap-12 items-start">
+            <div class="flex flex-col items-center">
+              <img
+                id="about-image"
+                src=""
+                alt="Ragini Sanjeev Singh"
+                class="rounded-lg shadow-2xl w-full max-w-sm h-auto object-cover border-4 border-white"
+              />
+              <div
+                class="mt-6 grid grid-cols-2 gap-4 w-full max-w-sm"
+                id="about-stats-container"
+              >
+                <!-- Stats populated by JS -->
+              </div>
+              <div
+                class="mt-6 bg-neutral-light p-4 rounded-lg shadow-md w-full max-w-sm"
+              >
+                <ul class="space-y-2" id="about-details-container">
+                  <!-- Details populated by JS -->
+                </ul>
+              </div>
+            </div>
+            <div>
+              <h2
+                class="text-3xl md:text-4xl font-bold text-secondary mb-6 font-serif flex items-center"
+                data-lang-key="about.title"
+              >
+                About Ragini Sanjeev Singh
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/BJP_flag.svg/1200px-BJP_flag.svg.png"
+                  alt="BJP Logo"
+                  class="h-12 ml-4"
+                />
+              </h2>
+              <div id="about-body-container">
+                <!-- Body paragraphs populated by JS -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Political Journey Section -->
+      <section
+        id="journey"
+        class="py-16 md:py-24 bg-neutral-light fade-in-section"
+      >
+        <div class="container mx-auto px-6">
+          <h2
+            class="text-3xl md:text-4xl font-bold text-center mb-12 font-serif text-secondary"
+            data-lang-key="journey.title"
+          >
+            Political Journey
+          </h2>
+          <div
+            class="relative max-w-2xl mx-auto"
+            id="journey-timeline-container"
+          >
+            <!-- Timeline will be populated by JS -->
+          </div>
+        </div>
+      </section>
+
+      <!-- News Section -->
+      <section
+        id="news"
+        class="py-16 md:py-24 bg-neutral-light fade-in-section"
+      >
+        <div class="container mx-auto px-6">
+          <h2
+            class="text-3xl md:text-4xl font-bold text-center mb-12 font-serif text-secondary"
+            data-lang-key="news.title"
+          >
+            Latest News & Events
+          </h2>
+          <div
+            class="max-w-6xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-8"
+            id="news-events-container"
+          >
+            <!-- News events populated by JS -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Focus Areas Section -->
+      <section id="focus" class="py-16 md:py-24 bg-white fade-in-section">
+        <div class="container mx-auto px-6">
+          <h2
+            class="text-3xl md:text-4xl font-bold text-center mb-12 font-serif text-secondary"
+            data-lang-key="focus.title"
+          >
+            5 Key Focus Areas
+          </h2>
+          <div
+            class="grid md:grid-cols-2 lg:grid-cols-5 gap-8"
+            id="focus-areas-container"
+          >
+            <!-- Focus areas populated by JS -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Achievements Section -->
+      <section
+        id="achievements"
+        class="py-16 md:py-24 bg-secondary text-white fade-in-section"
+      >
+        <div class="container mx-auto px-6">
+          <h2
+            class="text-3xl md:text-4xl font-bold text-center mb-12 font-serif text-primary"
+            data-lang-key="achievements.title"
+          >
+            Early Achievements
+          </h2>
+          <div
+            class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8"
+            id="achievements-container"
+          >
+            <!-- Achievements populated by JS -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Gallery Section -->
+      <section
+        id="gallery"
+        class="py-16 md:py-24 bg-neutral-light fade-in-section"
+      >
+        <div class="container mx-auto px-6">
+          <h2
+            class="text-3xl md:text-4xl font-bold text-center mb-12 font-serif text-secondary"
+            data-lang-key="gallery.title"
+          >
+            Gallery
+          </h2>
+          <div
+            class="grid grid-cols-2 md:grid-cols-3 gap-4"
+            id="gallery-images-container"
+          >
+            <!-- Gallery images populated by JS -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section
+        id="contact"
+        class="py-16 md:py-24 bg-secondary text-white fade-in-section"
+      >
+        <div class="relative container mx-auto px-6">
+          <h2
+            class="text-3xl md:text-4xl font-bold text-center mb-12 font-serif"
+            data-lang-key="contact.title"
+          >
+            Get In Touch
+          </h2>
+          <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
+            <!-- Contact Info -->
+            <div class="bg-white/10 p-8 rounded-lg">
+              <h3
+                class="text-2xl font-bold text-primary font-serif mb-4"
+                data-lang-key="contact.officeLabel"
+              >
+                Office
+              </h3>
+              <p class="text-lg mb-2" data-lang-key="contact.office">
+                Jharia MLA Office, Dhanbad, Jharkhand
+              </p>
+
+              <h3
+                class="text-2xl font-bold text-primary font-serif mb-2 mt-6"
+                data-lang-key="contact.emailLabel"
+              >
+                Email
+              </h3>
+              <a
+                href="mailto:raginisanjeevsinghbjp@gmail.com"
+                class="text-lg hover:underline"
+                data-lang-key="contact.email"
+                >raginisanjeevsinghbjp@gmail.com</a
+              >
+
+              <h3
+                class="text-2xl font-bold text-primary font-serif mb-2 mt-6"
+                data-lang-key="contact.hoursLabel"
+              >
+                Office Hours
+              </h3>
+              <p class="text-lg" data-lang-key="contact.hours">
+                Monday-Saturday, 10 AM - 5 PM
+              </p>
+
+              <div class="mt-8 border-t border-white/20 pt-8">
+                <h3
+                  class="text-2xl font-bold text-primary font-serif mb-6 text-center"
+                  data-lang-key="contact.socialTitle"
+                >
+                  Follow My Journey
+                </h3>
+                <div
+                  class="flex justify-center space-x-6"
+                  id="social-links-container"
+                >
+                  <!-- Social links populated by JS -->
+                </div>
+              </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="bg-white/10 p-8 rounded-lg">
+              <h3
+                class="text-2xl font-bold text-primary font-serif mb-6"
+                data-lang-key="contact.formTitle"
+              >
+                Send a Message
+              </h3>
+              <form id="contact-form" class="space-y-4">
+                <div>
+                  <label
+                    for="name"
+                    class="block text-sm font-semibold mb-1"
+                    data-lang-key="contact.formNameLabel"
+                    >Full Name</label
+                  >
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    required
+                    class="w-full bg-white/20 border border-white/30 rounded-md py-2 px-3 text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-primary"
+                  />
+                </div>
+                <div>
+                  <label
+                    for="email"
+                    class="block text-sm font-semibold mb-1"
+                    data-lang-key="contact.formEmailLabel"
+                    >Email Address</label
+                  >
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    class="w-full bg-white/20 border border-white/30 rounded-md py-2 px-3 text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-primary"
+                  />
+                </div>
+                <div>
+                  <label
+                    for="message"
+                    class="block text-sm font-semibold mb-1"
+                    data-lang-key="contact.formMessageLabel"
+                    >Your Message</label
+                  >
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="4"
+                    required
+                    class="w-full bg-white/20 border border-white/30 rounded-md py-2 px-3 text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-primary"
+                  ></textarea>
+                </div>
+                <button
+                  type="submit"
+                  class="w-full bg-primary hover:bg-primary-dark text-secondary font-bold py-3 px-4 rounded-md transition-colors duration-300"
+                  data-lang-key="contact.formSubmitLabel"
+                >
+                  Submit
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-secondary text-white py-6">
+      <div class="container mx-auto px-6 text-center text-sm">
+        <p data-lang-key="footer.copyright">
+          © 2024 Ragini Sanjeev Singh | Paid for by the Bharatiya Janata Party
+          (BJP). All Rights Reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="constants.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
