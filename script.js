@@ -249,15 +249,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Use a different set of images for the slideshow
     const images = [
-      "ragni_singh_facebook_images/img20.jpg",
-      "ragni_singh_facebook_images/img21.jpg",
-      "ragni_singh_facebook_images/img22.jpg",
       "ragni_singh_facebook_images/img23.jpg",
       "ragni_singh_facebook_images/img24.jpg",
       "ragni_singh_facebook_images/img25.jpg",
       "ragni_singh_facebook_images/img26.jpg",
       "ragni_singh_facebook_images/img27.jpg",
       "ragni_singh_facebook_images/img28.jpg",
+
+      "ragni_singh_facebook_images/img21.jpg",
+      "ragni_singh_facebook_images/img22.jpg",
 
       "ragni_singh_facebook_images/img3.jpg",
       "ragni_singh_facebook_images/img5.jpg",
