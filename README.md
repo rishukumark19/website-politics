@@ -1,5 +1,5 @@
 <div align="center">
-  <img width="120" alt="BJP Logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/BJP_flag.svg/1200px-BJP_flag.svg.png" />
+  <img width="120" alt="BJP Logo" src="ragni_singh_facebook_images/bjp-logo.jpg" />
   <h1>Ragini Sanjeev Singh - MLA Jharia</h1>
   <p>Official Website for Ragini Sanjeev Singh, Member of Legislative Assembly for Jharia, Dhanbad.</p>
 </div>

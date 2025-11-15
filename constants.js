@@ -19,7 +19,7 @@ window.content = {
     about: {
       title: "About Ragini Sanjeev Singh",
       image: "ragni-singh_facebook_images/2PIcyqpptfD.png",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/BJP_flag.svg/1200px-BJP_flag.svg.png",
+      logo: "ragni_singh_facebook_images/bjp-logo.jpg",
       body: [
         "Born into the renowned Singh Mansion political family of Dhanbad, Ragini Sanjeev Singh continues a powerful legacy of public service. As the wife of former MLA Sanjeev Singh, and daughter-in-law of the formidable Ex MLA Suryadeo Singh & Ex MLA Smt Kunti Singh, she has been immersed in the political landscape of Jharia from a young age.",
         "Transitioning from a dedicated House Maker to a dynamic political leader, Ragini Singh has a deep, grassroots understanding of the challenges and aspirations of the people of Jharia. Her victory in the 2024 assembly elections marks a new chapter for the constituency, driven by a commitment to development, empowerment, and transparent governance.",
@@ -291,7 +291,7 @@ window.content = {
     about: {
       title: "रागिनी संजीव सिंह के बारे में",
       image: "ragni-singh_facebook_images/2PIcyqpptfD.png",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/BJP_flag.svg/1200px-BJP_flag.svg.png",
+      logo: "ragni_singh_facebook_images/bjp-logo.jpg",
       body: [
         "धनबाद के प्रसिद्ध सिंह मैंशन राजनीतिक परिवार में जन्मी रागिनी संजीव सिंह जनसेवा की एक शक्तिशाली विरासत को आगे बढ़ा रही हैं। पूर्व विधायक संजीव सिंह की पत्नी और पूर्व विधायक सूर्यदेव सिंह और पूर्व विधायक श्रीमती कुंती सिंह की बहू के रूप में, वह कम उम्र से ही झरिया की राजनीतिक परिदृश्य में डूबी हुई हैं।",
         "एक समर्पित गृहणी से एक गतिशील राजनीतिक नेता बनने तक, रागिनी सिंह को झरिया के लोगों की चुनौतियों और आकांक्षाओं की गहरी, जमीनी समझ है। २०२४ के विधानसभा चुनावों में उनकी जीत निर्वाचन क्षेत्र के लिए एक नया अध्याय है, जो विकास, सशक्तिकरण और पारदर्शी शासन की प्रतिबद्धता से प्रेरित है।",
