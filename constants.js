@@ -20,13 +20,13 @@ window.content = {
       title: "About Ragni Singh",
       image: "ragni_singh_facebook_images/img20.jpg",
       logo: "ragni_singh_facebook_images/bjp-logo.jpg",
-            body: [
+      body: [
         "Born into the renowned Singh Mansion political family of Dhanbad, Ragini Singh continues a powerful legacy of public service. As the wife of former MLA Sanjeev Singh, and daughter-in-law of the formidable Ex MLA Suryadeo Singh & Ex MLA Smt Kunti Singh, she has been immersed in the political landscape of Jharia from a young age.",
         "Transitioning from a dedicated House Maker to a dynamic political leader, Ragini Singh has a deep, grassroots understanding of the challenges and aspirations of the people of Jharia. Her victory in the 2024 assembly elections marks a new chapter for the constituency, driven by a commitment to development, empowerment, and transparent governance.",
       ],
       stats: [
-        { label: "Facebook Followers", value: "54K+" },
-        { label: "Community Engagement", value: "9K+" },
+        { label: "Facebook Followers", value: "55K+" },
+        { label: "Community Engagement", value: "10K+" },
       ],
       details: [
         { label: "Full Name", value: "Ragni Singh" },
@@ -214,10 +214,12 @@ window.content = {
       title: "Get In Touch",
       officeLabel: "Office",
       office: "Jharia MLA Office, Dhanbad, Jharkhand",
+      email: "raginisingh.official@gmail.com",
       emailLabel: "Email",
-      email: "raginisanjeevsinghbjp@gmail.com",
       hoursLabel: "Office Hours",
       hours: "Monday-Saturday, 10 AM - 5 PM",
+      socialTitle: "Follow My Journey",
+      socialLinks: [
         {
           name: "Facebook",
           href: "https://facebook.com/RaginiSingh.official/",
@@ -235,7 +237,7 @@ window.content = {
         },
         {
           name: "YouTube",
-          href: "https://youtube.com/@RaginiSinghMansion",
+          href: "https://youtube.com/@RaginiSingh.official",
           path: "M21.58 7.19c-.23-.86-.91-1.54-1.77-1.77C18.25 5 12 5 12 5s-6.25 0-7.81.42c-.86.23-1.54.91-1.77 1.77C2 8.75 2 12 2 12s0 3.25.42 4.81c.23.86.91 1.54 1.77 1.77C5.75 19 12 19 12 19s6.25 0 7.81-.42c.86-.23-1.54.91-1.77-1.77C22 15.25 22 12 22 12s0-3.25-.42-4.81zM9.5 15.5V8.5l6.5 3.5-6.5 3.5z",
         },
       ],
@@ -298,8 +300,8 @@ window.content = {
         "एक समर्पित गृहणी से एक गतिशील राजनीतिक नेता बनने तक, रागिनी सिंह को झरिया के लोगों की चुनौतियों और आकांक्षाओं की गहरी, जमीनी समझ है। २०२४ के विधानसभा चुनावों में उनकी जीत निर्वाचन क्षेत्र के लिए एक नया अध्याय है, जो विकास, सशक्तिकरण और पारदर्शी शासन की प्रतिबद्धता से प्रेरित है।",
       ],
       stats: [
-        { label: "फेसबुक फॉलोअर्स", value: "५४ हजार+" },
-        { label: "सामुदायिक जुड़ाव", value: "९ हजार+" },
+        { label: "फेसबुक फॉलोअर्स", value: "५५ हजार+" },
+        { label: "सामुदायिक जुड़ाव", value: "१० हजार+" },
       ],
       details: [
         { label: "पूरा नाम", value: "रागिनी सिंह" },
@@ -488,7 +490,7 @@ window.content = {
       officeLabel: "कार्यालय",
       office: "झरिया विधायक कार्यालय, धनबाद, झारखंड",
       emailLabel: "ईमेल",
-      email: "raginisanjeevsinghbjp@gmail.com",
+      email: "raginisingh.official@gmail.com",
       hoursLabel: "कार्यालय समय",
       hours: "सोमवार-शनिवार, सुबह १० बजे - शाम ५ बजे",
       socialTitle: "मेरी यात्रा को फॉलो करें",
@@ -510,7 +512,7 @@ window.content = {
         },
         {
           name: "YouTube",
-          href: "https://youtube.com/@RaginiSinghMansion",
+          href: "https://youtube.com/@RaginiSingh.official",
           path: "M21.58 7.19c-.23-.86-.91-1.54-1.77-1.77C18.25 5 12 5 12 5s-6.25 0-7.81.42c-.86.23-1.54.91-1.77 1.77C2 8.75 2 12 2 12s0 3.25.42 4.81c.23.86.91 1.54 1.77 1.77C5.75 19 12 19 12 19s6.25 0 7.81-.42c.86-.23-1.54.91-1.77-1.77C22 15.25 22 12 22 12s0-3.25-.42-4.81zM9.5 15.5V8.5l6.5 3.5-6.5 3.5z",
         },
       ],
