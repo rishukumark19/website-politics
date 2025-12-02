@@ -12,12 +12,12 @@ window.content = {
       { href: "#contact", label: "Contact" },
     ],
     hero: {
-      name: "Ragni Singh",
+      name: "Ragini Singh",
       tagline: "झारिया की बेटी", // Daughter of Jharia
       subTagline: "Historic Victory for Jharia",
     },
     about: {
-      title: "About Ragni Singh",
+      title: "About Ragini Singh",
       image: "ragni_singh_facebook_images/img20.jpg",
       logo: "ragni_singh_facebook_images/bjp-logo.jpg",
       body: [
@@ -29,7 +29,7 @@ window.content = {
         { label: "Community Engagement", value: "10K+" },
       ],
       details: [
-        { label: "Full Name", value: "Ragni Singh" },
+        { label: "Full Name", value: "Ragini Singh" },
         { label: "Born", value: "23 January 1981 (Age 44)" },
         { label: "Constituency", value: "Jharia, Dhanbad, Jharkhand" },
         { label: "Position", value: "Member of Legislative Assembly (MLA)" },
@@ -249,7 +249,7 @@ window.content = {
     },
     footer: {
       copyright:
-        "© 2024 Ragni Singh | Paid for by the Bharatiya Janata Party (BJP). All Rights Reserved.",
+        "© 2024 Ragini Singh | Paid for by the Bharatiya Janata Party (BJP). All Rights Reserved.",
     },
     journey: {
       title: "Political Journey",
