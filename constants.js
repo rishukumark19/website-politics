@@ -13,7 +13,7 @@ window.content = {
     ],
     hero: {
       name: "Ragini Singh",
-      tagline: "झारिया की बेटी", // Daughter of Jharia
+      tagline: "झरिया की बेटी", // Daughter of Jharia
       subTagline: "Historic Victory for Jharia",
     },
     about: {
@@ -288,7 +288,7 @@ window.content = {
     ],
     hero: {
       name: "रागिनी सिंह",
-      tagline: "झारिया की बेटी",
+      tagline: "झरिया की बेटी",
       subTagline: "झरिया के लिए ऐतिहासिक जीत",
     },
     about: {
