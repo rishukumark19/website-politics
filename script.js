@@ -323,4 +323,61 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   }
+
+  // --- Counter Animation ---
+  const runCounterAnimations = () => {
+    const counters = document.querySelectorAll(".counter-animate");
+
+    const observer = new IntersectionObserver(
+      (entries, observer) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const counter = entry.target;
+            // Get the number from the current text (removes commas)
+            const targetValue = parseInt(
+              counter.innerText.replace(/,/g, ""),
+              10
+            );
+
+            if (isNaN(targetValue)) return;
+
+            // Prevent re-animation
+            if (counter.hasAttribute("data-animated")) return;
+            counter.setAttribute("data-animated", "true");
+
+            let startTimestamp = null;
+            const duration = 2000; // 2 seconds
+
+            const step = (timestamp) => {
+              if (!startTimestamp) startTimestamp = timestamp;
+              const progress = Math.min(
+                (timestamp - startTimestamp) / duration,
+                1
+              );
+
+              // Ease out quart function for smooth effect: 1 - (1-x)^4
+              const easeProgress = 1 - Math.pow(1 - progress, 4);
+
+              const currentCount = Math.floor(easeProgress * targetValue);
+              counter.innerText = currentCount.toLocaleString();
+
+              if (progress < 1) {
+                window.requestAnimationFrame(step);
+              } else {
+                counter.innerText = targetValue.toLocaleString();
+              }
+            };
+
+            window.requestAnimationFrame(step);
+            observer.unobserve(counter);
+          }
+        });
+      },
+      { threshold: 0.5 }
+    );
+
+    counters.forEach((counter) => observer.observe(counter));
+  };
+
+  runCounterAnimations();
 });
