@@ -40,6 +40,22 @@ document.addEventListener("DOMContentLoaded", () => {
       )
       .join("");
 
+    // 1b. Mobile Nav Links
+    const mobileNavContainer = document.getElementById(
+      "mobile-nav-links-container"
+    );
+    if (mobileNavContainer) {
+      mobileNavContainer.innerHTML = contentData.nav
+        .map(
+          (link) => `
+      <a href="${link.href}" class="text-gray-700 hover:text-primary transition-colors font-semibold text-lg py-2 block w-full text-center mobile-nav-link">
+        ${link.label}
+      </a>
+    `
+        )
+        .join("");
+    }
+
     // Update About Image
     const aboutImage = document.getElementById("about-image");
     if (aboutImage) aboutImage.src = contentData.about.image;
@@ -272,4 +288,39 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   setupHeroSlideshow();
+
+  // --- Mobile Menu Logic ---
+  const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+  const mobileMenu = document.getElementById("mobile-menu");
+
+  if (mobileMenuBtn && mobileMenu) {
+    mobileMenuBtn.addEventListener("click", () => {
+      const isHidden = mobileMenu.classList.contains("hidden");
+      if (isHidden) {
+        mobileMenu.classList.remove("hidden");
+        // Small delay to allow display:block to apply before transition
+        setTimeout(() => {
+          mobileMenu.classList.remove("scale-y-0", "opacity-0");
+          mobileMenu.classList.add("scale-y-100", "opacity-100");
+        }, 10);
+      } else {
+        mobileMenu.classList.remove("scale-y-100", "opacity-100");
+        mobileMenu.classList.add("scale-y-0", "opacity-0");
+        setTimeout(() => {
+          mobileMenu.classList.add("hidden");
+        }, 300); // Match transition duration
+      }
+    });
+
+    // Close menu when clicking a link
+    mobileMenu.addEventListener("click", (e) => {
+      if (e.target.classList.contains("mobile-nav-link")) {
+        mobileMenu.classList.remove("scale-y-100", "opacity-100");
+        mobileMenu.classList.add("scale-y-0", "opacity-0");
+        setTimeout(() => {
+          mobileMenu.classList.add("hidden");
+        }, 300);
+      }
+    });
+  }
 });
