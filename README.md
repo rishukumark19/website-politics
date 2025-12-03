@@ -1,31 +1,76 @@
-<div align="center">
-  <img width="120" alt="BJP Logo" src="ragni_singh_facebook_images/bjp-logo.jpg" />
-  <h1>Ragini Sanjeev Singh - MLA Jharia</h1>
-  <p>Official Website for Ragini Sanjeev Singh, Member of Legislative Assembly for Jharia, Dhanbad.</p>
-</div>
+# Ragini Singh - Official Portfolio Website
 
----
+> **Official digital presence of Ragini Singh, Member of Legislative Assembly (MLA) for Jharia, Dhanbad.**
 
-## 🚀 About The Project
+This repository hosts the source code for the official website of Ragini Singh. It is a high-performance, bilingual (English & Hindi), and mobile-responsive web application designed to connect with constituents, share updates, and highlight development initiatives in Jharia.
 
-This is a modern, responsive, and bilingual (English & Hindi) website built with plain HTML, CSS (via Tailwind CSS CDN), and JavaScript. It serves as the official online presence for Ragini Sanjeev Singh, showcasing her profile, election victories, focus areas, news, and achievements.
+## 🏛️ Project Overview
 
-### ✨ Features
+The website serves as a comprehensive platform for:
 
-- **Bilingual Content:** Easily switch between English (EN) and Hindi (HI).
-- **Responsive Design:** Looks great on desktops, tablets, and mobile devices.
-- **No Build Tools Required:** Runs directly in the browser without any installation steps.
-- **Simple & Fast:** A lightweight, single-page website.
+- **Constituent Engagement:** Direct communication channels and office details.
+- **Transparency:** Showcasing political journey, election results, and achievements.
+- **Information Dissemination:** Latest news, events, and focus areas for development.
+- **Accessibility:** Full bilingual support to reach a wider audience.
 
-## How to Run
+## ✨ Key Features
 
-This project does not require any installation or build steps.
+- **Premium UI/UX Design:** A modern, clean, and professional aesthetic reflecting the dignity of the office.
+- **Bilingual Support (i18n):** Seamless real-time toggling between English and Hindi content.
+- **Responsive Architecture:** Fully optimized for all devices, from large desktop screens to mobile phones.
+- **Dynamic Content Management:** Centralized content handling via `constants.js` for easy updates without touching the HTML structure.
+- **Interactive Elements:** Smooth scrolling, fade-in animations, and an interactive image gallery.
+- **Social Media Integration:** Direct links to all official social media handles (Facebook, X, Instagram, YouTube).
 
-1.  Make sure the `ragni-singh_facebook_images` folder is in the same directory as `index.html`.
-2.  Simply open the `index.html` file in your web browser to view the website.
+## 🛠️ Technology Stack
+
+- **Frontend:** HTML5, JavaScript (ES6+)
+- **Styling:** Tailwind CSS (via CDN for lightweight deployment)
+- **Icons:** SVG Icons
+- **Fonts:** Inter & Lora (Google Fonts)
+
+## 🚀 Getting Started
+
+This project is designed to be lightweight and requires no complex build process.
+
+### Prerequisites
+
+- A modern web browser (Chrome, Firefox, Edge, Safari).
+
+### Installation & Running
+
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/rishukumark19/website-politics.git
+    ```
+2.  **Navigate to the project directory:**
+    ```bash
+    cd website-politics
+    ```
+3.  **Launch the website:**
+    - Simply open `index.html` in your preferred web browser.
+    - Alternatively, use a local server like Live Server for VS Code for a better development experience.
+
+## 📂 Project Structure
+
+```
+website-politics/
+├── index.html          # Main entry point and structure
+├── script.js           # Core logic for interactivity and content rendering
+├── constants.js        # Centralized data store for English/Hindi content
+├── ragini_singh_.../   # Directory containing image assets
+└── README.md           # Project documentation
+```
+
+## 🔗 Official Social Handles
+
+- **Facebook:** [Ragini Singh](https://www.facebook.com/raginisingh01)
+- **X (Twitter):** [@raginisingh7007](https://x.com/raginisingh7007)
+- **Instagram:** [@RaginiSingh.official](https://instagram.com/RaginiSingh.official/)
+- **YouTube:** [@raginisinghmansion](https://youtube.com/@raginisinghmansion)
 
 ---
 
 <p align="center">
-  © 2024 Ragini Sanjeev Singh | Paid for by the Bharatiya Janata Party (BJP). All Rights Reserved.
+  Developed and Maintained by <strong>Bright Branding</strong>.
 </p>

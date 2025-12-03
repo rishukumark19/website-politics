@@ -213,11 +213,9 @@ window.content = {
     contact: {
       title: "Get In Touch",
       officeLabel: "Office",
-      office: "Jharia MLA Office, Dhanbad, Jharkhand",
-      email: "raginisingh.official@gmail.com",
+      office: "Bihar Building, Jharia, Jharkhand",
+      email: "Raginisanjeevsinghbjp@gmail.com",
       emailLabel: "Email",
-      hoursLabel: "Office Hours",
-      hours: "Monday-Saturday, 10 AM - 5 PM",
       socialTitle: "Follow My Journey",
       socialLinks: [
         {
@@ -485,11 +483,9 @@ window.content = {
     contact: {
       title: "संपर्क करें",
       officeLabel: "कार्यालय",
-      office: "झरिया विधायक कार्यालय, धनबाद, झारखंड",
+      office: "बिहार बिल्डिंग, झरिया, झारखंड",
       emailLabel: "ईमेल",
-      email: "raginisingh.official@gmail.com",
-      hoursLabel: "कार्यालय समय",
-      hours: "सोमवार-शनिवार, सुबह १० बजे - शाम ५ बजे",
+      email: "Raginisanjeevsinghbjp@gmail.com",
       socialTitle: "मेरी यात्रा को फॉलो करें",
       socialLinks: [
         {
