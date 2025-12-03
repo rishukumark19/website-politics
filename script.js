@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
     navContainer.innerHTML = contentData.nav
       .map(
         (link) => `
-      <a href="${link.href}" class="text-gray-700 hover:text-primary transition-colors font-semibold">
+      <a href="${link.href}" class="text-gray-700 hover:text-primary transition-colors font-semibold nav-link">
         ${link.label}
       </a>
     `
@@ -122,7 +122,7 @@ document.addEventListener("DOMContentLoaded", () => {
     newsContainer.innerHTML = contentData.news.events
       .map(
         (event) => `
-      <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden hover-card">
         <img src="${event.image}" alt="${event.title}" class="w-full h-48 object-cover">
         <div class="p-6">
           <p class="text-sm text-gray-500 mb-2">${event.date}</p>
@@ -139,7 +139,7 @@ document.addEventListener("DOMContentLoaded", () => {
     focusContainer.innerHTML = contentData.focus.areas
       .map(
         (area) => `
-      <div class="text-center p-4">
+      <div class="text-center p-4 hover-scale">
         <div class="flex items-center justify-center h-16 w-16 rounded-full bg-primary/10 mx-auto mb-4">
           <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
             <path stroke-linecap="round" stroke-linejoin="round" d="${area.icon}"></path>
@@ -158,7 +158,7 @@ document.addEventListener("DOMContentLoaded", () => {
     achievementsContainer.innerHTML = contentData.achievements.achievements
       .map(
         (item) => `
-      <div class="flex items-start space-x-4">
+      <div class="flex items-start space-x-4 p-4 rounded-lg hover:bg-white/10 transition-colors duration-300">
         <div>
           <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="${item.icon}"></path>
@@ -180,7 +180,7 @@ document.addEventListener("DOMContentLoaded", () => {
     galleryContainer.innerHTML = contentData.gallery.images
       .map(
         (image) => `
-      <img src="${image}" alt="Gallery image" class="w-full h-full object-cover rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+      <img src="${image}" alt="Gallery image" class="w-full h-full object-cover rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 hover-scale">
     `
       )
       .join("");
@@ -190,7 +190,7 @@ document.addEventListener("DOMContentLoaded", () => {
     socialContainer.innerHTML = contentData.contact.socialLinks
       .map(
         (link) => `
-      <a href="${link.href}" target="_blank" rel="noopener noreferrer" class="text-white hover:text-primary transition-transform transform hover:scale-110">
+      <a href="${link.href}" target="_blank" rel="noopener noreferrer" class="text-white hover:text-primary transition-transform transform hover:scale-125 duration-300">
         <span class="sr-only">${link.name}</span>
         <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
           <path d="${link.path}"></path>
