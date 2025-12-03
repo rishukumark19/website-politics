@@ -247,10 +247,7 @@ window.content = {
       formMessageLabel: "Your Message",
       formSubmitLabel: "Submit",
     },
-    footer: {
-      copyright:
-        "© 2024 Ragini Singh | Paid for by the Bharatiya Janata Party (BJP). All Rights Reserved.",
-    },
+  
     journey: {
       title: "Political Journey",
       events: [
@@ -522,10 +519,7 @@ window.content = {
       formMessageLabel: "आपका संदेश",
       formSubmitLabel: "प्रस्तुत करें",
     },
-    footer: {
-      copyright:
-        "© २०२४ रागिनी सिंह | भारतीय जनता पार्टी (भाजपा) द्वारा भुगतान किया गया। सर्वाधिकार सुरक्षित।",
-    },
+    
     journey: {
       title: "राजनीतिक सफ़र",
       events: [
