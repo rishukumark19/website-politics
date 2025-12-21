@@ -277,13 +277,16 @@ document.addEventListener("DOMContentLoaded", () => {
     let currentSlide = 0;
 
     if (slides.length > 0) {
-      slides[currentSlide].classList.add("active-zoom"); // Show & zoom the first slide
+      // Use a small delay to ensure the browser registers the transition from base state
+      setTimeout(() => {
+        slides[currentSlide].classList.add("active-zoom");
+      }, 50);
 
       setInterval(() => {
-        slides[currentSlide].classList.remove("active-zoom"); // Fade out & reset zoom current
-        currentSlide = (currentSlide + 1) % slides.length; // Move to next
-        slides[currentSlide].classList.add("active-zoom"); // Fade in & zoom next
-      }, 5000); // Change image every 5 seconds
+        slides[currentSlide].classList.remove("active-zoom");
+        currentSlide = (currentSlide + 1) % slides.length;
+        slides[currentSlide].classList.add("active-zoom");
+      }, 5000);
     }
   };
 
