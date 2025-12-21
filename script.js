@@ -277,12 +277,12 @@ document.addEventListener("DOMContentLoaded", () => {
     let currentSlide = 0;
 
     if (slides.length > 0) {
-      slides[currentSlide].style.opacity = 1; // Show the first slide
+      slides[currentSlide].classList.add("active-zoom"); // Show & zoom the first slide
 
       setInterval(() => {
-        slides[currentSlide].style.opacity = 0; // Fade out current
+        slides[currentSlide].classList.remove("active-zoom"); // Fade out & reset zoom current
         currentSlide = (currentSlide + 1) % slides.length; // Move to next
-        slides[currentSlide].style.opacity = 1; // Fade in next
+        slides[currentSlide].classList.add("active-zoom"); // Fade in & zoom next
       }, 5000); // Change image every 5 seconds
     }
   };
@@ -294,32 +294,26 @@ document.addEventListener("DOMContentLoaded", () => {
   const mobileMenu = document.getElementById("mobile-menu");
 
   if (mobileMenuBtn && mobileMenu) {
-    mobileMenuBtn.addEventListener("click", () => {
-      const isHidden = mobileMenu.classList.contains("hidden");
-      if (isHidden) {
-        mobileMenu.classList.remove("hidden");
-        // Small delay to allow display:block to apply before transition
-        setTimeout(() => {
-          mobileMenu.classList.remove("scale-y-0", "opacity-0");
-          mobileMenu.classList.add("scale-y-100", "opacity-100");
-        }, 10);
-      } else {
-        mobileMenu.classList.remove("scale-y-100", "opacity-100");
-        mobileMenu.classList.add("scale-y-0", "opacity-0");
-        setTimeout(() => {
-          mobileMenu.classList.add("hidden");
-        }, 300); // Match transition duration
-      }
-    });
+    const toggleMenu = () => {
+      mobileMenu.classList.toggle("active");
+      mobileMenuBtn.classList.toggle("menu-open");
+    };
+
+    mobileMenuBtn.addEventListener("click", toggleMenu);
 
     // Close menu when clicking a link
     mobileMenu.addEventListener("click", (e) => {
       if (e.target.classList.contains("mobile-nav-link")) {
-        mobileMenu.classList.remove("scale-y-100", "opacity-100");
-        mobileMenu.classList.add("scale-y-0", "opacity-0");
-        setTimeout(() => {
-          mobileMenu.classList.add("hidden");
-        }, 300);
+        toggleMenu();
+      }
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener("click", (e) => {
+      const isClickInside =
+        mobileMenu.contains(e.target) || mobileMenuBtn.contains(e.target);
+      if (!isClickInside && mobileMenu.classList.contains("active")) {
+        toggleMenu();
       }
     });
   }
